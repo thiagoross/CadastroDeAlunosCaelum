@@ -1,6 +1,7 @@
 package br.com.caelum.cadastro;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -68,7 +69,7 @@ public class ListaAlunosActivity extends ActionBarActivity {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
         final Aluno alunoSelecionado = ListaAlunosActivity.this.alunos.get(info.position);
 
-        MenuItem delete = menu.add("Manda pro limbo");
+        MenuItem delete = menu.add("Deletar");
         delete.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
@@ -82,6 +83,32 @@ public class ListaAlunosActivity extends ActionBarActivity {
                 return false;
             }
         });
+
+        MenuItem ligar = menu.add("Ligar");
+
+        Intent intentLigar = new Intent(Intent.ACTION_DIAL);
+        intentLigar.setData(Uri.parse("tel:" + alunoSelecionado.getTelefone()));
+        ligar.setIntent(intentLigar);
+
+        MenuItem sms = menu.add("Enviar SMS");
+
+        Intent intentSMS = new Intent(Intent.ACTION_VIEW);
+        intentSMS.setData(Uri.parse("sms:" + alunoSelecionado.getTelefone()));
+        sms.setIntent(intentSMS);
+
+        MenuItem visitarSite = menu.add("Visitar site");
+
+        Intent intentVisitarSite = new Intent(Intent.ACTION_VIEW);
+        intentVisitarSite.setData(Uri.parse("http://" + alunoSelecionado.getSite()));
+        visitarSite.setIntent(intentVisitarSite);
+
+        MenuItem mapa = menu.add("Ver no mapa");
+
+        Intent intentMapa = new Intent(Intent.ACTION_VIEW);
+        intentMapa.setData(Uri.parse("geo:0,0?q=" + alunoSelecionado.getEndereco()));
+        mapa.setIntent(intentMapa);
+
+
     }
 
     // Private methods
