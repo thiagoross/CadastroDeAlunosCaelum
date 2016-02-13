@@ -107,8 +107,6 @@ public class ListaAlunosActivity extends ActionBarActivity {
         Intent intentMapa = new Intent(Intent.ACTION_VIEW);
         intentMapa.setData(Uri.parse("geo:0,0?q=" + alunoSelecionado.getEndereco()));
         mapa.setIntent(intentMapa);
-
-
     }
 
     // Private methods

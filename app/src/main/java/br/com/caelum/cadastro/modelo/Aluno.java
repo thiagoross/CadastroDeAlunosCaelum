@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class Aluno implements Serializable {
 
     private Long id;
+    private String foto;
     private String nome;
     private String telefone;
     private String endereco;
@@ -20,6 +21,19 @@ public class Aluno implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return this.id + "- " + this.nome;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
     public String getNome() {
@@ -60,10 +74,5 @@ public class Aluno implements Serializable {
 
     public void setNota(Double nota) {
         this.nota = nota;
-    }
-
-    @Override
-    public String toString() {
-        return this.id + "- " + this.nome;
     }
 }

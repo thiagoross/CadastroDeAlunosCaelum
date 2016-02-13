@@ -18,18 +18,19 @@ import br.com.caelum.cadastro.modelo.Aluno;
 public class AlunoDAO extends SQLiteOpenHelper {
 
     private static String TABELA = "ALUNOS";
+    private static int VERSAO = 2;
 
     private Context context;
 
     public AlunoDAO(Context context) {
-        super(context, "CadastroCaelum", null, 1);
+        super(context, "CadastroCaelum", null, VERSAO);
         this.context = context;
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         String sql = "CREATE TABLE " + TABELA + " (id INTEGER PRIMARY KEY," +
-                "nome TEXT NOT NULL, telefone TEXT," +
+                "foto TEXT, nome TEXT NOT NULL, telefone TEXT," +
                 "endereco TEXT, site TEXT, nota REAL);";
 
         db.execSQL(sql);
@@ -37,14 +38,14 @@ public class AlunoDAO extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        String sql = "DROP TABLE IF EXISTS " + TABELA + ";";
+        String sql = "ALTER TABLE " + TABELA + " ADD COLUMN foto TEXT;";
         db.execSQL(sql);
-        onCreate(db);
     }
 
     public void insere(Aluno aluno) {
         ContentValues values = new ContentValues();
 
+        values.put("foto", aluno.getFoto());
         values.put("nome", aluno.getNome());
         values.put("telefone", aluno.getTelefone());
         values.put("endereco", aluno.getEndereco());
@@ -60,6 +61,7 @@ public class AlunoDAO extends SQLiteOpenHelper {
         SQLiteDatabase bd = getWritableDatabase();
 
         ContentValues values = new ContentValues();
+        values.put("foto", aluno.getFoto());
         values.put("nome", aluno.getNome());
         values.put("telefone", aluno.getTelefone());
         values.put("endereco", aluno.getEndereco());
@@ -84,6 +86,7 @@ public class AlunoDAO extends SQLiteOpenHelper {
             Aluno aluno = new Aluno();
 
             aluno.setId(c.getLong(c.getColumnIndex("id")));
+            aluno.setFoto(c.getString(c.getColumnIndex("foto")));
             aluno.setNome(c.getString(c.getColumnIndex("nome")));
             aluno.setTelefone(c.getString(c.getColumnIndex("telefone")));
             aluno.setEndereco(c.getString(c.getColumnIndex("endereco")));
