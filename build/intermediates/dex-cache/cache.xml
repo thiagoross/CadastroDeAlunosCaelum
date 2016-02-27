@@ -9,6 +9,13 @@
         <dex dex="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/pre-dexed/debug/classes-2007c57aeebdd157a99ff652508bd34f83a4010d.jar" />
     </item>
     <item
+        jar="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5e412e954a24c5310a459c09870e4e2081aceb03">
+        <dex dex="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/pre-dexed/debug/classes-c3eaa95cb665b87a15f7cc4896bb6101ff2578f0.jar" />
+    </item>
+    <item
         jar="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -16,18 +23,18 @@
         <dex dex="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-3829ed5054be90bc5d2959e0f83a71ab4d5fc722.jar" />
     </item>
     <item
-        jar="/Users/thiago/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-2dc0c75a2f4c34cdf22ddff44e6c6725566881e9.jar" />
-    </item>
-    <item
         jar="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
         <dex dex="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/pre-dexed/debug/classes-ae781fabc300a7b547c85e1cc6e6a0c30268daa1.jar" />
+    </item>
+    <item
+        jar="/Users/thiago/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-2dc0c75a2f4c34cdf22ddff44e6c6725566881e9.jar" />
     </item>
 
 </items>

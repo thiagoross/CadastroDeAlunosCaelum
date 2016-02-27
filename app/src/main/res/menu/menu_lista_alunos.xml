@@ -3,9 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ListaAlunosActivity">
 
-    <item android:id="@+id/action_ok"
-        android:title="@string/action_ok"
-        android:orderInCategory="100"
+    <item android:id="@+id/menu_mapa"
+        android:title="@string/menu_mapa"
+        android:icon="@drawable/ic_mapa"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/menu_receber_provas"
+        android:title="@string/menu_receber_provas"
+        android:icon="@drawable/ic_download"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/menu_enviar_notas"
+        android:title="@string/menu_enviar_notas"
+        android:icon="@drawable/ic_upload"
         app:showAsAction="never" />
 
 </menu>

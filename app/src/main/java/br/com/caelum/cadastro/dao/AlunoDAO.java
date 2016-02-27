@@ -68,7 +68,7 @@ public class AlunoDAO extends SQLiteOpenHelper {
         values.put("site", aluno.getSite());
         values.put("nota", aluno.getNota());
 
-        bd.update(TABELA, values, "id=?", new String[] { aluno.getId().toString() });
+        bd.update(TABELA, values, "id=?", new String[]{aluno.getId().toString()});
     }
 
     public void delete(Aluno aluno) {
@@ -99,5 +99,14 @@ public class AlunoDAO extends SQLiteOpenHelper {
         c.close();
 
         return alunos;
+    }
+
+    public boolean ehAluno(String telefone) {
+        Cursor c = getReadableDatabase().rawQuery("SELECT telefone FROM " + TABELA + " WHERE telefone = ?", new String[]{ telefone });
+
+        int total = c.getCount();
+        c.close();
+
+        return total > 0;
     }
 }
