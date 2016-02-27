@@ -9,11 +9,18 @@
         <dex dex="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/pre-dexed/debug/classes-2007c57aeebdd157a99ff652508bd34f83a4010d.jar" />
     </item>
     <item
-        jar="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/jars/classes.jar"
+        jar="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="5e412e954a24c5310a459c09870e4e2081aceb03">
-        <dex dex="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/pre-dexed/debug/classes-c3eaa95cb665b87a15f7cc4896bb6101ff2578f0.jar" />
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/pre-dexed/debug/classes-f479a033ca378a82a80a33765ae5f1d3372eebda.jar" />
+    </item>
+    <item
+        jar="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/pre-dexed/debug/classes-25b26c0f08d4d66d0775ca8742b36b4d563029be.jar" />
     </item>
     <item
         jar="/Users/thiago/Documents/Projects/Cadastro/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"

@@ -125,6 +125,10 @@ public class ListaAlunosActivity extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.menu_mapa:
+                Intent mapa = new Intent(this, MostraAlunosActivity.class);
+                startActivity(mapa);
+                return true;
             case R.id.menu_enviar_notas:
                 new EnviaAlunosTask(this).execute();
                 return true;

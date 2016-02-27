@@ -18,7 +18,7 @@
             android:padding="20dp">
 
             <TextView
-                android:id="@+id/detalhe_prova_materia"
+                android:id="@+id/detalhes_prova_materia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -27,7 +27,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/detalhe_prova_data"
+                android:id="@+id/detalhes_prova_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -37,7 +37,7 @@
         </TableRow>
 
         <ListView
-            android:id="@+id/detalhe_prova_topicos"
+            android:id="@+id/detalhes_prova_topicos"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
